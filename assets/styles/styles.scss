@@ -1,3 +1,45 @@
-p{
-    color:red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    border: 5px solid red;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    
+    align-content: space-between;
+
+
+    &__box {
+        
+        border: 5px solid green;
+        text-align: center;
+        height: 20vh;
+        width: 40vw;
+        &:nth-child(2){
+            flex-shrink:1 ;
+        }
+
+    }
+    &__box4{
+        border: 5px solid green;
+        text-align: center;
+        height: 20vh;
+        width: 40vw;
+        order: -1;
+        flex-basis: 200px;
+
+
+    }
 }
